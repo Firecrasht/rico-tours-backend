@@ -8,13 +8,13 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: rico-tours-db
+          name: ricotoursreservas
           property: connectionString
       - key: JWT_SECRET
-        value: your_super_secret_key
+        value: z8S1sBewWfcXc9hGTL2tOzbxdq6fCoq8
       - key: PORT
-        value: 3000
+        value: 5432
 
 databases:
-  - name: rico-tours-db
+  - name: ricotoursreservas
     plan: free

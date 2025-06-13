@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: rico-tours-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    plan: free
+    envVars:
+      - key: VITE_API_URL
+        fromEnvVar: VITE_API_URL
